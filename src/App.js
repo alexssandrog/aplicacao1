@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import logo from './logo.svg';
 import './App.css';
-import { Home } from './Home';
-import { Sobre } from './Sobre';
+import Home from './Home';
+import Sobre from './Sobre';
 
 class App extends Component {
   constructor(props) {
@@ -17,16 +17,16 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Welcome to React</h1>
+            <h1 className="App-title">Alexssandro Gottschalk</h1>
             <p>
-              <Link to='/'>Home</Link>
+              <Link to='/'>Home</Link> |&nbsp;
               <Link to='/sobre'>Sobre</Link>
             </p>
           </header>
           <p className="App-intro">
             <Route path='/sobre' component={Sobre} />
             <Route path='/' exact component={Home} />
-        </p>
+          </p>
         </div>
       </Router>
     );
